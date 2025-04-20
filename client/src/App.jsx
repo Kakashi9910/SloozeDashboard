@@ -55,7 +55,6 @@ function App() {
           sx={{
             flexGrow: 1,
             width: { sm: `calc(100% - 60px)` },
-            height: "100vh", 
             overflow: "auto",
             bgcolor: '#f5f5f5'
           }}
