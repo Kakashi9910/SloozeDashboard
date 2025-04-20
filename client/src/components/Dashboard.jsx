@@ -57,11 +57,11 @@ const statsData = [
 
 const Dashboard = () => {
   return (
-    <Box sx={{ flexGrow: 1, p: 3 }}>
+    <Box sx={{ flexGrow: 1, p: { xs: 2, md: 3 } }}>
       {/* First Row - Stats Cards */}
       <Grid container spacing={3} sx={{ mb: 3 }}>
         {statsData.map((stat, index) => (
-          <Grid item size={{xs:12, sm:6, lg:3}}  key={index}>
+          <Grid item size={{xs:9, sm:6, lg:3}}  key={index}>
             <Paper
               sx={{
                 p: 2,
@@ -103,7 +103,7 @@ const Dashboard = () => {
         ))}
 
       {/* Second row */}
-      <Grid item size={{lg:5,md:4,xs:12}}>
+      <Grid item size={{lg:5,md:4,xs:9}}>
           <Paper sx={{ p: 2 }}>
             <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
               <Box>
@@ -142,14 +142,14 @@ const Dashboard = () => {
             </Box>
           </Paper>
         </Grid>
-        <Grid item size={{lg:7,md:4,xs:12}}>
+        <Grid item size={{lg:7,md:4,xs:9}}>
         <ShipmentAnalytics />
         </Grid>
         {/* Third row */}
-        <Grid item size={{lg:5,md:4,xs:12}}>
+        <Grid item size={{lg:5,md:4,xs:9}}>
             <Spotlight/>
         </Grid>
-        <Grid item size={{lg:7,md:4,xs:12}}>
+        <Grid item size={{lg:7,md:4,xs:9}}>
             <TopItems/>
         </Grid>
       </Grid>

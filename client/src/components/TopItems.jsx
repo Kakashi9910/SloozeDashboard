@@ -18,7 +18,7 @@ const topItemsPurchased = [
 
 const TopItems = () => {
   return (
-    <Box sx={{ display: 'flex', gap: 3 }}>
+    <Box sx={{ display: 'flex', flexDirection:{xs:'column',md:'row'}, gap: 3 }}>
       {/* Top Items Sold */}
       <Paper sx={{ p: 2, flex: 1 }}>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 3 }}>
