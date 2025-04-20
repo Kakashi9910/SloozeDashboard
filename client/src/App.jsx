@@ -38,7 +38,6 @@ function App() {
         sx={{
           display: "flex",
           flexDirection: "row",
-          minHeight: "100vh",
           overflow: "hidden",
         }}
       >
